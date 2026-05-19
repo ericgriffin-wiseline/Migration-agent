@@ -1,0 +1,327 @@
+{
+    "tables": {
+        "CONTACTS": [
+            {
+                "column_name": "CONTACT_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "FIRST_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "LAST_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "EMAIL",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "PHONE",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ],
+        "COUNTRIES": [
+            {
+                "column_name": "COUNTRY_ID",
+                "data_type": "CHAR",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "COUNTRY_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "REGION_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ],
+        "CUSTOMERS": [
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "EMAIL",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            }
+        ],
+        "EMPLOYEES": [
+            {
+                "column_name": "EMPLOYEE_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "FIRST_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "LAST_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "EMAIL",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "PHONE",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "HIRE_DATE",
+                "data_type": "DATE",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "MANAGER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "JOB_TITLE",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            }
+        ],
+        "INVENTORIES": [
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "WAREHOUSE_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "QUANTITY",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ],
+        "LOCATIONS": [
+            {
+                "column_name": "LOCATION_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "ADDRESS",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "POSTAL_CODE",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "CITY",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "STATE",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "COUNTRY_ID",
+                "data_type": "CHAR",
+                "is_primary_key": false
+            }
+        ],
+        "MIGRATION_TEST": [
+            {
+                "column_name": "ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "TASK_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "STATUS",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            }
+        ],
+        "ORDERS": [
+            {
+                "column_name": "ORDER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "ORDER_DATE",
+                "data_type": "DATE",
+                "is_primary_key": false
+            }
+        ],
+        "ORDER_ITEMS": [
+            {
+                "column_name": "ITEM_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "ORDER_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "QUANTITY",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ],
+        "PRODUCTS": [
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "PRODUCT_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "PRICE",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ],
+        "PRODUCT_CATEGORIES": [
+            {
+                "column_name": "CATEGORY_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "CATEGORY_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            }
+        ],
+        "REGIONS": [
+            {
+                "column_name": "REGION_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "REGION_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            }
+        ],
+        "WAREHOUSES": [
+            {
+                "column_name": "WAREHOUSE_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": true
+            },
+            {
+                "column_name": "WAREHOUSE_NAME",
+                "data_type": "VARCHAR2",
+                "is_primary_key": false
+            },
+            {
+                "column_name": "LOCATION_ID",
+                "data_type": "NUMBER",
+                "is_primary_key": false
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "child_table": "ORDERS",
+            "parent_table": "CUSTOMERS",
+            "via_column": "CUSTOMER_ID"
+        },
+        {
+            "child_table": "CONTACTS",
+            "parent_table": "CUSTOMERS",
+            "via_column": "CUSTOMER_ID"
+        },
+        {
+            "child_table": "ORDER_ITEMS",
+            "parent_table": "PRODUCTS",
+            "via_column": "PRODUCT_ID"
+        },
+        {
+            "child_table": "INVENTORIES",
+            "parent_table": "PRODUCTS",
+            "via_column": "PRODUCT_ID"
+        },
+        {
+            "child_table": "ORDER_ITEMS",
+            "parent_table": "ORDERS",
+            "via_column": "ORDER_ID"
+        },
+        {
+            "child_table": "COUNTRIES",
+            "parent_table": "REGIONS",
+            "via_column": "REGION_ID"
+        },
+        {
+            "child_table": "LOCATIONS",
+            "parent_table": "COUNTRIES",
+            "via_column": "COUNTRY_ID"
+        },
+        {
+            "child_table": "WAREHOUSES",
+            "parent_table": "LOCATIONS",
+            "via_column": "LOCATION_ID"
+        },
+        {
+            "child_table": "INVENTORIES",
+            "parent_table": "WAREHOUSES",
+            "via_column": "WAREHOUSE_ID"
+        },
+        {
+            "child_table": "EMPLOYEES",
+            "parent_table": "EMPLOYEES",
+            "via_column": "MANAGER_ID"
+        }
+    ]
+}

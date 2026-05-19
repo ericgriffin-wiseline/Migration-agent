@@ -1,0 +1,39 @@
+{
+  "source_system": "Oracle_21c",
+  "target_system": "Microsoft_Fabric_TSQL",
+  "version": "1.0_Enterprise",
+  "type_mapping_logic": {
+    "NUMERIC_LOGIC": {
+      "NUMBER_NO_PRECISION": "DECIMAL(38, 10)",
+      "NUMBER_INTEGER_ONLY": "Use BIGINT if precision > 9, else INT",
+      "NUMBER_DECIMAL": "DECIMAL(p, s)",
+      "FLOAT": "FLOAT(53)",
+      "BINARY_FLOAT": "REAL",
+      "BINARY_DOUBLE": "FLOAT(53)"
+    },
+    "STRING_LOGIC": {
+      "VARCHAR2": "VARCHAR(n) up to 8000, else VARCHAR(MAX)",
+      "NVARCHAR2": "NVARCHAR(n) up to 4000, else NVARCHAR(MAX)",
+      "CHAR": "CHAR(n)",
+      "NCHAR": "NCHAR(n)",
+      "CLOB": "VARCHAR(MAX)",
+      "NCLOB": "NVARCHAR(MAX)"
+    },
+    "DATE_TIME_LOGIC": {
+      "DATE": "DATETIME2(0)",
+      "TIMESTAMP": "DATETIME2(7)",
+      "TIMESTAMP_TZ": "DATETIMEOFFSET",
+      "TIMESTAMP_LTZ": "DATETIMEOFFSET"
+    },
+    "BINARY_LOGIC": {
+      "RAW": "VARBINARY(n)",
+      "BLOB": "VARBINARY(MAX)",
+      "LONG_RAW": "VARBINARY(MAX)"
+    },
+    "SPECIAL_LOGIC": {
+      "ROWID": "CHAR(18)",
+      "UROWID": "VARCHAR(4000)",
+      "XMLTYPE": "XML"
+    }
+  }
+}

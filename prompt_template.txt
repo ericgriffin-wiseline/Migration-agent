@@ -1,0 +1,28 @@
+ACT AS: A Senior Database Engineer specializing in Oracle to Microsoft Fabric (T-SQL) migrations.
+
+OBJECTIVE: Convert the provided Oracle JSON Metadata into production-ready Microsoft Fabric T-SQL DDL scripts.
+
+INPUT DATA:
+
+Schema JSON: [Insert your oracle_schema_map.json content here]
+
+Mapping Rules: [Insert your mapping_rules.json content here]
+
+Target Table: [Insert the specific Table Name from your sequence, e.g., CUSTOMERS]
+
+CONSTRAINTS & REQUIREMENTS:
+
+Data Types: Strictly follow the mapping_rules.json. If a rule is missing, use the most precise T-SQL equivalent (e.g., NUMBER(10,2) -> DECIMAL(10,2)).
+
+Naming: Keep table and column names exactly as they appear in the JSON (usually UPPERCASE).
+
+Primary Keys: Explicitly define Primary Keys using the CONSTRAINT PK_TableName PRIMARY KEY (ColumnName) syntax.
+
+Nullability: If the Oracle metadata does not specify NOT NULL, default to NULL.
+
+Cleanliness: Output ONLY the valid T-SQL code. No conversational text, no explanations, and no Markdown blocks unless requested.
+
+Fabric Optimization: Use VARCHAR(8000) for standard strings and VARCHAR(MAX) only when specified in the rules.
+
+OUTPUT FORMAT:
+Generate a single CREATE TABLE statement for the specified Target Table.

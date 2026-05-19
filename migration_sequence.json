@@ -1,0 +1,15 @@
+[
+    "CUSTOMERS",
+    "EMPLOYEES",
+    "MIGRATION_TEST",
+    "PRODUCTS",
+    "PRODUCT_CATEGORIES",
+    "REGIONS",
+    "ORDERS",
+    "CONTACTS",
+    "COUNTRIES",
+    "ORDER_ITEMS",
+    "LOCATIONS",
+    "WAREHOUSES",
+    "INVENTORIES"
+]
